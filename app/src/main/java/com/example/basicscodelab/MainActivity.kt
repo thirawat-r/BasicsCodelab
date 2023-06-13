@@ -69,7 +69,7 @@ fun MyApp(modifier: Modifier = Modifier) {
 @Composable
 fun Greetings(
     modifier: Modifier = Modifier,
-    names: List<String> = List(1000) { "$it" }
+    names: List<String> = List(100) { "$it" }
 ) {
     LazyColumn(modifier = modifier.padding(vertical = 4.dp)) {
         items(items = names) { name ->
